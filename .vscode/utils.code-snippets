@@ -19,7 +19,7 @@
 		"scope": "cpp",
 		"prefix": "HEADER",
 		"body": [
-			"/*",
+			"/**",
 			" * Author: KurbyDoo",
 			" * Creation Date: ${CURRENT_MONTH_NAME_SHORT} ${CURRENT_DATE}, ${CURRENT_YEAR}",
 			" * Problem Link: ${1:link}",
@@ -30,8 +30,7 @@
 			" * \t",
 			" * \t",
 			" * \t",
-			" */",
-			"",
+			"**/",
 		],
 		"description": "Header snippet for solution files"
 	},
