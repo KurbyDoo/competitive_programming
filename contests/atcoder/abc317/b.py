@@ -1,0 +1,6 @@
+n = int(input())
+nums = list(map(int, input().split()))
+minimum = min(nums)
+maximum = max(nums)
+missing = (maximum * (maximum + 1) // 2) - sum(nums) - (minimum * (minimum - 1) // 2)
+print(missing)

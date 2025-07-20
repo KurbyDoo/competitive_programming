@@ -1,0 +1,1 @@
+print("Bat" if (n := list(map(int, input().split())))[0] > n[1] else "Glove")

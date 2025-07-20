@@ -1,0 +1,185 @@
+checker: checker.py
+archive: s3.zip
+test_cases:
+- batched:
+  - in: s3.1-01.in
+    out: s3.1-01.out
+  - in: s3.1-02.in
+    out: s3.1-02.out
+  - in: s3.1-03.in
+    out: s3.1-03.out
+  - in: s3.1-04.in
+    out: s3.1-04.out
+  - in: s3.1-05.in
+    out: s3.1-05.out
+  - in: s3.1-06.in
+    out: s3.1-06.out
+  - in: s3.1-07.in
+    out: s3.1-07.out
+  - in: s3.1-08.in
+    out: s3.1-08.out
+  - in: s3.1-09.in
+    out: s3.1-09.out
+  points: 2
+- in: s3.sample-01.in
+  out: s3.sample-01.out
+  points: 0
+- batched:
+  - in: s3.2-10.in
+    out: s3.2-10.out
+  - in: s3.2-11.in
+    out: s3.2-11.out
+  - in: s3.2-12.in
+    out: s3.2-12.out
+  - in: s3.2-13.in
+    out: s3.2-13.out
+  - in: s3.2-14.in
+    out: s3.2-14.out
+  - in: s3.2-15.in
+    out: s3.2-15.out
+  - in: s3.2-16.in
+    out: s3.2-16.out
+  - in: s3.2-17.in
+    out: s3.2-17.out
+  - in: s3.2-18.in
+    out: s3.2-18.out
+  points: 2
+- batched:
+  - in: s3.3-19.in
+    out: s3.3-19.out
+  - in: s3.3-20.in
+    out: s3.3-20.out
+  - in: s3.3-21.in
+    out: s3.3-21.out
+  - in: s3.3-22.in
+    out: s3.3-22.out
+  - in: s3.3-23.in
+    out: s3.3-23.out
+  - in: s3.3-24.in
+    out: s3.3-24.out
+  - in: s3.3-25.in
+    out: s3.3-25.out
+  - in: s3.3-26.in
+    out: s3.3-26.out
+  - in: s3.3-27.in
+    out: s3.3-27.out
+  - in: s3.3-28.in
+    out: s3.3-28.out
+  - in: s3.3-29.in
+    out: s3.3-29.out
+  - in: s3.3-30.in
+    out: s3.3-30.out
+  - in: s3.3-31.in
+    out: s3.3-31.out
+  - in: s3.3-32.in
+    out: s3.3-32.out
+  - in: s3.3-33.in
+    out: s3.3-33.out
+  - in: s3.3-34.in
+    out: s3.3-34.out
+  - in: s3.3-35.in
+    out: s3.3-35.out
+  - in: s3.3-36.in
+    out: s3.3-36.out
+  - in: s3.3-37.in
+    out: s3.3-37.out
+  - in: s3.3-38.in
+    out: s3.3-38.out
+  - in: s3.3-39.in
+    out: s3.3-39.out
+  - in: s3.3-40.in
+    out: s3.3-40.out
+  - in: s3.3-41.in
+    out: s3.3-41.out
+  - in: s3.3-42.in
+    out: s3.3-42.out
+  - in: s3.3-43.in
+    out: s3.3-43.out
+  - in: s3.3-44.in
+    out: s3.3-44.out
+  - in: s3.3-45.in
+    out: s3.3-45.out
+  - in: s3.3-46.in
+    out: s3.3-46.out
+  - in: s3.3-47.in
+    out: s3.3-47.out
+  - in: s3.3-48.in
+    out: s3.3-48.out
+  points: 4
+- in: s3.sample-02.in
+  out: s3.sample-02.out
+  points: 0
+- batched:
+  - in: s3.4-49.in
+    out: s3.4-49.out
+  - in: s3.4-50.in
+    out: s3.4-50.out
+  - in: s3.4-51.in
+    out: s3.4-51.out
+  - in: s3.4-52.in
+    out: s3.4-52.out
+  - in: s3.4-53.in
+    out: s3.4-53.out
+  - in: s3.4-54.in
+    out: s3.4-54.out
+  - in: s3.4-55.in
+    out: s3.4-55.out
+  - in: s3.4-56.in
+    out: s3.4-56.out
+  - in: s3.4-57.in
+    out: s3.4-57.out
+  - in: s3.4-58.in
+    out: s3.4-58.out
+  - in: s3.4-59.in
+    out: s3.4-59.out
+  - in: s3.4-60.in
+    out: s3.4-60.out
+  - in: s3.4-61.in
+    out: s3.4-61.out
+  - in: s3.4-62.in
+    out: s3.4-62.out
+  - in: s3.4-63.in
+    out: s3.4-63.out
+  - in: s3.4-64.in
+    out: s3.4-64.out
+  - in: s3.4-65.in
+    out: s3.4-65.out
+  - in: s3.4-66.in
+    out: s3.4-66.out
+  - in: s3.4-67.in
+    out: s3.4-67.out
+  - in: s3.4-68.in
+    out: s3.4-68.out
+  - in: s3.4-69.in
+    out: s3.4-69.out
+  - in: s3.4-70.in
+    out: s3.4-70.out
+  - in: s3.4-71.in
+    out: s3.4-71.out
+  - in: s3.4-72.in
+    out: s3.4-72.out
+  - in: s3.4-73.in
+    out: s3.4-73.out
+  - in: s3.4-74.in
+    out: s3.4-74.out
+  - in: s3.4-75.in
+    out: s3.4-75.out
+  - in: s3.4-76.in
+    out: s3.4-76.out
+  - in: s3.4-77.in
+    out: s3.4-77.out
+  - in: s3.4-78.in
+    out: s3.4-78.out
+  - in: s3.4-79.in
+    out: s3.4-79.out
+  - in: s3.4-80.in
+    out: s3.4-80.out
+  - in: s3.4-81.in
+    out: s3.4-81.out
+  - in: s3.4-82.in
+    out: s3.4-82.out
+  - in: s3.4-83.in
+    out: s3.4-83.out
+  - in: s3.4-84.in
+    out: s3.4-84.out
+  points: 7

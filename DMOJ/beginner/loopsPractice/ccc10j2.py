@@ -1,0 +1,1 @@
+a, b, c, d, s = int(input()), int(input()), int(input()), int(input()), int(input())
