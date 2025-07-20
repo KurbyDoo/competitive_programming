@@ -3,7 +3,7 @@
  * Creation Date: Jul 19, 2025
  * Problem Link: https://atcoder.jp/contests/abc411/tasks/abc411_e
  * Problem Name: E - E [max]
- * Status: Unsolved
+ * Status: Solved
  * Notes:
  *     Iterate through all dice faces from max -> least
  *     Keep track of how many dice faces are less than current
