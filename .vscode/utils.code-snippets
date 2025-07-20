@@ -17,7 +17,7 @@
 	// }
 	"Solution Header C++": {
 		"scope": "cpp",
-		"prefix": "header",
+		"prefix": "HEADER",
 		"body": [
 			"/*",
 			" * Author: KurbyDoo",
@@ -31,12 +31,13 @@
 			" * \t",
 			" * \t",
 			" */",
+			"",
 		],
 		"description": "Header snippet for solution files"
 	},
 	"Python Solution Header": {
 		"scope": "python",
-		"prefix": "header",
+		"prefix": "HEADER",
 		"body": [
 			"# Author: KurbyDoo",
 			"# Creation Date: ${CURRENT_MONTH_NAME_SHORT} ${CURRENT_DATE}, ${CURRENT_YEAR}",
@@ -53,7 +54,7 @@
 	},
 	"C++ Base template": {
 		"scope": "cpp",
-		"prefix": "base",
+		"prefix": "BASE",
 		"body": [
 			"#include<bits/stdc++.h>",
 			"",
@@ -74,19 +75,39 @@
 	},
 	"C++ Quick Exponentiation": {
 		"scope": "cpp",
-		"prefix": "quickpow",
+		"prefix": "QUICKPOW",
 		"body": [
 			"ll quickpow(ll n, ll exp, ll mod) {",
 			"\tif (exp == 0) return 1LL;",
 			"\tll res = quickpow(n, exp / 2, mod);",
-			"\treturn (((res * res) % MOD) * (exp % 2 ? n : 1LL)) % MOD;",
+			"\treturn (((res * res) % mod) * (exp % 2 ? n : 1LL)) % mod;",
 			"}"
 		],
 		"description": "Binary Exponentiation"
 	},
+	"C++ Inverse Factorial": {
+		"scope": "cpp",
+		"prefix": "INV_FACT",
+		"body": [
+			"void populate_factorial(ll max_val, ll mod, vector<ll>& _fact, vector<ll>& _inv_fact) {",
+			"    _fact.resize(max_val + 1);",
+			"    _inv_fact.resize(max_val + 1);",
+			"    _fact[0] = 1;",
+			"    _inv_fact[0] = 1;",
+			"    for (ll i = 1; i <= max_val; i++) {",
+			"        _fact[i] = _fact[i - 1] * i % mod;",
+			"    }",
+			"    _inv_fact[max_val] = quickpow(_fact[max_val], mod - 2, mod);",
+			"    for (ll i = max_val; i > 1; i--) {",
+			"        _inv_fact[i - 1] = _inv_fact[i] * i % mod;",
+			"    }",
+			"}",
+		],
+		"description": "Get inverse factorial, requires QUICKPOW"
+	},
 	"C++ Segment Tree": {
 		"scope": "cpp",
-		"prefix": "segtree",
+		"prefix": "SEGTREE",
 		"body": [
 			"ll _tree[400010];",
 			"void build(ll i, ll l, ll r) {",
