@@ -76,10 +76,10 @@
 		"scope": "cpp",
 		"prefix": "QUICKPOW",
 		"body": [
-			"ll quickpow(ll n, ll exp, ll mod) {",
+			"ll quickpow(ll base, ll exp, ll mod) {",
 			"\tif (exp == 0) return 1LL;",
-			"\tll res = quickpow(n, exp / 2, mod);",
-			"\treturn (((res * res) % mod) * (exp % 2 ? n : 1LL)) % mod;",
+			"\tll res = quickpow(base, exp / 2, mod);",
+			"\treturn (((res * res) % mod) * (exp % 2 ? base : 1LL)) % mod;",
 			"}"
 		],
 		"description": "Binary Exponentiation"
@@ -137,7 +137,7 @@
 			"    }",
 			"    ll mid = (l + r) / 2;",
 			"    if (qr <= mid) return query(i * 2, l, mid, ql, qr);",
-			"    else if (mid < ql) return query(i * 2, mid + 1, l, ql, qr);",
+			"    else if (mid < ql) return query(i * 2 + 1, mid + 1, l, ql, qr);",
 			"    // Recurse query behaviour",
 			"}"
 		],
