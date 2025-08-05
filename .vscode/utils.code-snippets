@@ -142,5 +142,17 @@
 			"}"
 		],
 		"description": "Basic Template Segtree w/o lazy prop"
+	},
+	"C++ file IO": {
+		"scope": "cpp",
+		"prefix": "fileio",
+		"body": [
+			"std::ifstream infile(\"file.in\");",
+			"ofstream outfile;",
+			"outfile.open(\"file.out\");",
+			"$1",
+			"outfile << ans << '\\n';",
+			"outfile.close();"
+		]
 	}
 }

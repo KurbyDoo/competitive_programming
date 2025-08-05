@@ -33,11 +33,11 @@ int main() {
 
     cin >> h >> w;
     for (int i = 1; i <= h; i++) {
-        rows[i].resize(w + 1);
-        dp[i].resize(w + 1);
-        memset(dp[i], -1, sizeof(dp[i]));
+        rows[i] = vector<ll>(w + 1, 0LL);
+        dp[i] = vector<ll>(w + 1, 999999999LL);
         for (int j = 1; j <= w; j++) {
             cin >> rows[i][j];
+
         }
     }
 
@@ -45,13 +45,14 @@ int main() {
     for (int i = 1; i <= h + w - 1; i++) {
         cin >> pk[i];
     }
-
     dp[h][w] = 0;
     for (int i = h; i > 0; i--) {
         for (int j = w; j > 0; j--) {
-            // TODO: Fill
-        } }
-    printf("%lld\n", dp[h][w]);
+            if (i < h) dp[i][j] = min(dp[i][j], max(0LL, dp[i + 1][j] + pk[i + j] - rows[i][j]));
+            if (j < w) dp[i][j] = min(dp[i][j], max(0LL, dp[i][j + 1] + pk[i + j] - rows[i][j]));
+        }
+    }
+    printf("%lld\n", dp[1][1]);
 
     return 0;
 }
