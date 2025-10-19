@@ -53,7 +53,7 @@
 	},
 	"C++ Base template": {
 		"scope": "cpp",
-		"prefix": "BASE",
+		"prefix": "MAIN",
 		"body": [
 			"#include<bits/stdc++.h>",
 			"",
@@ -137,7 +137,7 @@
 			"    }",
 			"    ll mid = (l + r) / 2;",
 			"    if (qr <= mid) return query(i * 2, l, mid, ql, qr);",
-			"    else if (mid < ql) return query(i * 2 + 1, mid + 1, l, ql, qr);",
+			"    else if (mid < ql) return query(i * 2 + 1, mid + 1, r, ql, qr);",
 			"    // Recurse query behaviour",
 			"}"
 		],
